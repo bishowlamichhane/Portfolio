@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 px-2 bg-muted/50">
+    <section id="about" className="py-16 px-16 bg-muted/50">
       <div className="container ">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1 h-92">

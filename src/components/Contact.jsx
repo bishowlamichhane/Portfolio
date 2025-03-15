@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 container">
+    <section id="contact" className="py-16 px-16 container">
       <div className="text-center mb-12">
         <Badge variant="outline" className="mb-2">
           Get In Touch

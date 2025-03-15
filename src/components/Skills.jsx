@@ -64,7 +64,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-16 container">
+    <section id="skills" className="py-16 container px-16">
       <div className="text-center mb-12">
         <Badge variant="outline" className="mb-2">
           My Skills
