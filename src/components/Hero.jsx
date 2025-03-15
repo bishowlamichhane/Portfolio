@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
         <div className="flex-1 space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Hi, I'm <span className="text-primary">Alex</span>
+            Hi, I'm <span className="text-primary">Bishow</span>
             <br />
             <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
               Frontend Developer
@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="flex gap-4 pt-4">
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/bishowlamichhane"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -39,7 +39,7 @@ const Hero = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/bishow-lamichhane-5477ba294/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -49,12 +49,12 @@ const Hero = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://twitter.com"
+                href="https://www.instagram.com/bishowlamichhane_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter"
+                aria-label="Instagram"
               >
-                <Twitter className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
             </Button>
           </div>
@@ -66,7 +66,7 @@ const Hero = () => {
               <img
                 src="/images/bishow_prof.jpg"
                 alt="Profile"
-                className="w-64 h-64 md:w-80 md:h-80 object-cover object-top"
+                className="w-64 h-64 md:w-80 md:h-80 object-cover object-center"
               />
             </div>
           </div>

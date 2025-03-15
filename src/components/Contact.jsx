@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,10 +25,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    // EmailJS function to send email
+    emailjs
+      .send(
+        "service_tc221rc", // Replace with your EmailJS service ID
+        "template_z9t7lcg", // Replace with your EmailJS template ID
+        formData,
+        "6hubKsn2rqPM3sqWd" // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          alert("Thank you for your message! I'll get back to you soon.");
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        },
+        (error) => {
+          console.error("Failed to send email:", error.text);
+          alert("Oops! Something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
@@ -53,21 +70,13 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-medium">Email</h3>
-                <p className="text-muted-foreground">contact@example.com</p>
+                <p className="text-muted-foreground">
+                  lamichhanebisho4545@gmail.com
+                </p>
               </div>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="p-6 flex items-center gap-4">
-              <div className="bg-primary/10 p-3 rounded-full">
-                <Phone className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-medium">Phone</h3>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
-              </div>
-            </CardContent>
-          </Card>
+
           <Card>
             <CardContent className="p-6 flex items-center gap-4">
               <div className="bg-primary/10 p-3 rounded-full">
@@ -75,7 +84,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-medium">Location</h3>
-                <p className="text-muted-foreground">San Francisco, CA</p>
+                <p className="text-muted-foreground">Kathmandu, Nepal</p>
               </div>
             </CardContent>
           </Card>

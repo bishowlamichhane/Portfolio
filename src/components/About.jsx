@@ -8,7 +8,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1 h-92">
             <img
-              src="/images/about_me.jpg"
+              src="/images/about.jpg"
               alt="About me"
               className="rounded-lg shadow-lg w-full h-full object-cover object-top"
             />
@@ -24,7 +24,7 @@ const About = () => {
             </div>
             <p className="text-muted-foreground">
               I'm a frontend developer with a passion for creating beautiful,
-              functional, and user-centered digital experiences. With 5 years of
+              functional, and user-centered digital experiences. With 1 year of
               experience in the field, I am always looking forward to improving
               my skills and learning new technologies.
             </p>
@@ -35,7 +35,7 @@ const About = () => {
                   <p className="text-sm text-muted-foreground">
                     Bachelor's Degree in Computer Science
                     <br />
-                    University of Technology, 2018-2022
+                    Tribhuwan University, 2020-2024
                   </p>
                 </CardContent>
               </Card>
@@ -43,9 +43,9 @@ const About = () => {
                 <CardContent className="p-4">
                   <h3 className="font-bold text-lg mb-2">Experience</h3>
                   <p className="text-sm text-muted-foreground">
-                    Senior Frontend Developer
+                    Fresher
                     <br />
-                    Tech Solutions Inc., 2022-Present
+                    Present{" "}
                   </p>
                 </CardContent>
               </Card>

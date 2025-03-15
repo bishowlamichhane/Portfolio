@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -10,17 +10,15 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent mb-2">
-              Portfolio
+              Bishow Lamichhane
             </div>
-            <p className="text-muted-foreground">
-              Building exceptional digital experiences.
-            </p>
+            <p className="text-muted-foreground"></p>
           </div>
 
           <div className="flex gap-4 mb-6 md:mb-0">
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/bishowlamichhane"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -30,7 +28,7 @@ const Footer = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/bishow-lamichhane-5477ba294/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -40,16 +38,16 @@ const Footer = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://twitter.com"
+                href="https://www.instagram.com/bishowlamichhane_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter"
+                aria-label="Instagram"
               >
-                <Twitter className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:contact@example.com" aria-label="Email">
+              <a href="mailto:lamichhanebisho4545@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -57,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {currentYear} Alex Developer. All rights reserved.</p>
+          <p>© {currentYear} Bishow Lamichhane.</p>
         </div>
       </div>
     </footer>

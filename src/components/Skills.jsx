@@ -18,6 +18,8 @@ const Skills = () => {
         "React",
         "JavaScript",
         "TypeScript",
+        "Redux",
+        "Zustand",
         "HTML5",
         "CSS3",
         "Tailwind CSS",
@@ -37,7 +39,7 @@ const Skills = () => {
     {
       title: "Backend",
       icon: <Database className="h-6 w-6 text-blue-500" />,
-      skills: ["Node.js", "Express", "RESTful APIs", "GraphQL", "Firebase"],
+      skills: ["Node.js", "Express", "RESTful APIs", "MongoDB", "SQL"],
     },
     {
       title: "Tools",
@@ -47,7 +49,7 @@ const Skills = () => {
     {
       title: "Version Control",
       icon: <GitBranch className="h-6 w-6 text-green-500" />,
-      skills: ["Git", "GitHub", "GitLab", "CI/CD", "Agile/Scrum"],
+      skills: ["Git", "GitHub", "GitLab"],
     },
     {
       title: "Other",

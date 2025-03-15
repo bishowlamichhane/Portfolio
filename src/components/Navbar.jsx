@@ -45,7 +45,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 ">
           <Button
             variant="ghost"
             size="icon"
@@ -53,9 +53,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             aria-label="Toggle theme"
           >
             {darkMode ? (
-              <Sun className="h-5 w-5" />
+              <Sun className="h-5 w-5 cursor-pointer" />
             ) : (
-              <Moon className="h-5 w-5" />
+              <Moon className="h-5 w-5 cursor-pointer" />
             )}
           </Button>
 

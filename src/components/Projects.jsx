@@ -14,37 +14,38 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/myntra.png",
       tags: ["React", "Redux", "Node.js", "MongoDB"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com",
+      liveLink: "https://e-commerce-myntra-omega.vercel.app/",
+      githubLink: "https://github.com/bishowlamichhane/eCommerce--Myntra",
     },
     {
       title: "Task Management App",
       description:
         "A productivity app that helps users organize tasks, set priorities, and track progress.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/gist.png",
       tags: ["React", "Firebase", "Tailwind CSS"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com",
+      liveLink: "https://gist-task-management-application.vercel.app/",
+      githubLink:
+        "https://github.com/bishowlamichhane/GIST-Task-Management-Application",
     },
     {
-      title: "Weather Dashboard",
+      title: "Admin Dashboard",
       description:
-        "A weather application that provides real-time forecasts, historical data, and interactive maps.",
-      image: "/placeholder.svg?height=300&width=500",
+        "An admin dashboard for online business, that manages sales, order management and customer management. ",
+      image: "/images/openshop.png",
       tags: ["React", "OpenWeather API", "Chart.js"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com",
+      liveLink: "https://admin-dashboard-phi-amber.vercel.app/",
+      githubLink: "https://github.com/bishowlamichhane/Admin-Dashboard",
     },
     {
-      title: "Social Media Dashboard",
+      title: "Trip Bahadur ",
       description:
-        "An analytics dashboard for social media managers to track engagement and growth metrics.",
-      image: "/placeholder.svg?height=300&width=500",
+        "An AI chat assistant that provides a detailed itinerary to travellers travelling Nepal. Travellers will get access to a map marked with locations and detailed informations about hotels and lodges near the destination. ",
+      image: "/images/trip.png",
       tags: ["React", "D3.js", "REST API"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com",
+      liveLink: "https://trip-bahadur.vercel.app/",
+      githubLink: "https://github.com/bishowlamichhane/Trip-Bahadur",
     },
   ];
 
@@ -71,7 +72,7 @@ const Projects = () => {
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105 "
                 />
               </div>
               <CardHeader className="p-6 pb-2">
