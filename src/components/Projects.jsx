@@ -15,7 +15,7 @@ const Projects = () => {
       description:
         "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.",
       image: "/images/myntra.png",
-      tags: ["React", "Redux", "Node.js", "MongoDB"],
+      tags: ["React", "Redux", "Node.js", "MongoDB", "Git"],
       liveLink: "https://e-commerce-myntra-omega.vercel.app/",
       githubLink: "https://github.com/bishowlamichhane/eCommerce--Myntra",
     },
@@ -24,7 +24,7 @@ const Projects = () => {
       description:
         "A productivity app that helps users organize tasks, set priorities, and track progress.",
       image: "/images/gist.png",
-      tags: ["React", "Firebase", "Tailwind CSS"],
+      tags: ["React", "Zustand", "Tailwind CSS", "Git"],
       liveLink: "https://gist-task-management-application.vercel.app/",
       githubLink:
         "https://github.com/bishowlamichhane/GIST-Task-Management-Application",
@@ -34,7 +34,7 @@ const Projects = () => {
       description:
         "An admin dashboard for online business, that manages sales, order management and customer management. ",
       image: "/images/openshop.png",
-      tags: ["React", "OpenWeather API", "Chart.js"],
+      tags: ["React", "Recharts", "Redux", "Chart.js"],
       liveLink: "https://admin-dashboard-phi-amber.vercel.app/",
       githubLink: "https://github.com/bishowlamichhane/Admin-Dashboard",
     },
@@ -43,7 +43,7 @@ const Projects = () => {
       description:
         "An AI chat assistant that provides a detailed itinerary to travellers travelling Nepal. Travellers will get access to a map marked with locations and detailed informations about hotels and lodges near the destination. ",
       image: "/images/trip.png",
-      tags: ["React", "D3.js", "REST API"],
+      tags: ["React", "Gemini API", "Zustand", "REST API"],
       liveLink: "https://trip-bahadur.vercel.app/",
       githubLink: "https://github.com/bishowlamichhane/Trip-Bahadur",
     },
