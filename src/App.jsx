@@ -38,7 +38,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground px-20">
+    <div className="min-h-screen bg-background text-foreground ">
       <div className="container mx-auto px-4 min-w-6xl">
         <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main>
