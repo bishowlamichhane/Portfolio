@@ -25,9 +25,9 @@ const Projects = () => {
         "A productivity app that helps users organize tasks, set priorities, and track progress.",
       image: "/images/gist.png",
       tags: ["React", "Zustand", "Tailwind CSS", "Git"],
-      liveLink: "https://gist-task-management-application.vercel.app/",
+      liveLink: "https://gist-task-management-web.vercel.app/",
       githubLink:
-        "https://github.com/bishowlamichhane/GIST-Task-Management-Application",
+        "https://github.com/bishowlamichhane/GIST-Task-Management-Web",
     },
     {
       title: "Admin Dashboard",
@@ -50,13 +50,13 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-16 bg-muted/50">
-      <div className="container">
-        <div className="text-center mb-12">
+    <section id="projects" className="py-10 sm:py-16 bg-muted/50 px-4">
+      <div className="container mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
           <Badge variant="outline" className="mb-2">
             My Work
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
             Featured Projects
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
@@ -65,33 +65,47 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden group">
+            <Card
+              key={index}
+              className="overflow-hidden group h-full flex flex-col"
+            >
               <div className="overflow-hidden">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105 "
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <CardHeader className="p-6 pb-2">
-                <h3 className="text-xl font-bold">{project.title}</h3>
+              <CardHeader className="p-4 sm:p-6 pb-2">
+                <h3 className="text-lg sm:text-xl font-bold">
+                  {project.title}
+                </h3>
               </CardHeader>
-              <CardContent className="p-6 pt-2">
-                <p className="text-muted-foreground mb-4">
+              <CardContent className="p-4 sm:p-6 pt-2 flex-grow">
+                <p className="text-muted-foreground mb-4 text-sm sm:text-base">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="secondary">
+                    <Badge
+                      key={tagIndex}
+                      variant="secondary"
+                      className="text-xs"
+                    >
                       {tag}
                     </Badge>
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0 flex gap-4">
-                <Button variant="outline" size="sm" asChild>
+              <CardFooter className="p-4 sm:p-6 pt-0 flex flex-wrap gap-3 sm:gap-4">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  asChild
+                  className="flex-1 sm:flex-none"
+                >
                   <a
                     href={project.githubLink}
                     target="_blank"
@@ -100,7 +114,7 @@ const Projects = () => {
                     <Github className="mr-2 h-4 w-4" /> Code
                   </a>
                 </Button>
-                <Button size="sm" asChild>
+                <Button size="sm" asChild className="flex-1 sm:flex-none">
                   <a
                     href={project.liveLink}
                     target="_blank"

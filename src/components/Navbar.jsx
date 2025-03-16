@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
     { name: "Home", href: "#home" },
@@ -16,14 +17,27 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
     { name: "Contact", href: "#contact" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleNavClick = (section) => {
     setActiveSection(section);
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <div className="font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+    <header
+      className={`sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-shadow ${
+        isScrolled ? "shadow-sm" : ""
+      }`}
+    >
+      <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-4">
+        <div className="font-bold text-xl sm:text-2xl bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
           Portfolio
         </div>
 
@@ -45,7 +59,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 ">
+        <div className="flex items-center gap-2">
           <Button
             variant="ghost"
             size="icon"
@@ -67,7 +81,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <div className="flex flex-col gap-4 mt-8">
+              <div className="flex flex-col gap-6 mt-8">
                 {navItems.map((item) => (
                   <a
                     key={item.name}

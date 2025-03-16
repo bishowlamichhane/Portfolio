@@ -38,8 +38,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground ">
-      <div className="container mx-auto px-4 min-w-6xl">
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main>
           <Hero />

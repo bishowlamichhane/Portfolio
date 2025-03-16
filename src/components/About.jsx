@@ -3,22 +3,25 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 px-16 bg-muted/50">
-      <div className="container ">
-        <div className="flex flex-col md:flex-row gap-12 items-center">
-          <div className="flex-1 h-92">
+    <section
+      id="about"
+      className="py-10 sm:py-16 px-4 sm:px-8 md:px-16 bg-muted/50"
+    >
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+          <div className="w-full md:flex-1 max-w-md mx-auto md:mx-0">
             <img
               src="/images/about.jpg"
               alt="About me"
-              className="rounded-lg shadow-lg w-full h-full object-cover object-top"
+              className="rounded-lg shadow-lg w-full h-auto object-cover object-top aspect-square sm:aspect-auto"
             />
           </div>
-          <div className="flex-1 space-y-6">
+          <div className="w-full md:flex-1 space-y-6">
             <div>
               <Badge variant="outline" className="mb-2">
                 About Me
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
                 Passionate Developer & Designer
               </h2>
             </div>
@@ -28,7 +31,7 @@ const About = () => {
               experience in the field, I am always looking forward to improving
               my skills and learning new technologies.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Card>
                 <CardContent className="p-4">
                   <h3 className="font-bold text-lg mb-2">Education</h3>
