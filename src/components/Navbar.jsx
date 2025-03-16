@@ -65,11 +65,12 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             size="icon"
             onClick={toggleDarkMode}
             aria-label="Toggle theme"
+            className="cursor-pointer"
           >
             {darkMode ? (
-              <Sun className="h-5 w-5 cursor-pointer" />
+              <Sun className="h-5 w-5" />
             ) : (
-              <Moon className="h-5 w-5 cursor-pointer" />
+              <Moon className="h-5 w-5" />
             )}
           </Button>
 

@@ -149,7 +149,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full">
+                  <Button type="submit" className="w-full cursor-pointer">
                     <Send className="mr-2 h-4 w-4" /> Send Message
                   </Button>
                 </form>
