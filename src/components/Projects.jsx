@@ -7,6 +7,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
+import { title } from "process";
 
 const Projects = () => {
   const projects = [
@@ -19,6 +20,7 @@ const Projects = () => {
       liveLink: "https://e-commerce-myntra-omega.vercel.app/",
       githubLink: "https://github.com/bishowlamichhane/eCommerce--Myntra",
     },
+
     {
       title: "Task Management App",
       description:
@@ -37,6 +39,15 @@ const Projects = () => {
       tags: ["React", "Recharts", "Redux", "Chart.js"],
       liveLink: "https://admin-dashboard-phi-amber.vercel.app/",
       githubLink: "https://github.com/bishowlamichhane/Admin-Dashboard",
+    },
+    {
+      title: "Video Streaming Platform",
+      description:
+        "StreamIt is a video streaming platform with real-time chatrooms, letting users watch, share, and discuss videos in a community-driven space",
+      image: "/images/streamdrop.jpg",
+      tags: ["React", "Zustand", "Node.js", "MongoDB", "Git", "WebSocket"],
+      liveLink: "https://streamit-1.onrender.com/dashboard",
+      githubLink: "https://github.com/bishowlamichhane/StreamIt",
     },
     {
       title: "Trip Bahadur ",
