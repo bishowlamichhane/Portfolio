@@ -15,6 +15,7 @@ const Skills = () => {
       title: "Frontend",
       icon: <Code className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />,
       skills: [
+        "Next.js",
         "React",
         "JavaScript",
         "TypeScript",
@@ -39,7 +40,15 @@ const Skills = () => {
     {
       title: "Backend",
       icon: <Database className="h-5 w-5 sm:h-6 sm:w-6 text-blue-500" />,
-      skills: ["Node.js", "Express", "RESTful APIs", "MongoDB", "SQL"],
+      skills: [
+        "Node.js",
+        "Firebase Auth",
+        "Firestore",
+        "Express",
+        "RESTful APIs",
+        "MongoDB",
+        "SQL",
+      ],
     },
     {
       title: "Tools",
