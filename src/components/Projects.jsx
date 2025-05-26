@@ -58,6 +58,15 @@ const Projects = () => {
       liveLink: "https://trip-bahadur.vercel.app/",
       githubLink: "https://github.com/bishowlamichhane/Trip-Bahadur",
     },
+    {
+      title: "Weather App ",
+      description:
+        "A simple and minimal weather App which uses weather API to display the weather of any city throughout the world.",
+      image: "/images/weather.png",
+      tags: ["React", "Weather API", "CSS", "Axios"],
+      liveLink: "https://weather-app-beige-eight-91.vercel.app/",
+      githubLink: "https://github.com/bishowlamichhane/Weather-App",
+    },
   ];
 
   return (
