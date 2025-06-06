@@ -8,10 +8,14 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import { motion } from "framer-motion";
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   useEffect(() => {
     if (
       localStorage.getItem("darkMode") === "true" ||
@@ -38,7 +42,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 1.0 }}
+      className="min-h-screen bg-background text-foreground"
+    >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main>
@@ -50,7 +59,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
