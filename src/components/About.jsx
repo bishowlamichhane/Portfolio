@@ -47,6 +47,7 @@ const About = () => {
                   <h3 className="font-bold text-lg mb-2">Experience</h3>
                   <p className="text-sm text-muted-foreground">
                     Full Stack Web Developer - Internship Select IT Hub
+                    
                     <br />
                     Present{" "}
                   </p>

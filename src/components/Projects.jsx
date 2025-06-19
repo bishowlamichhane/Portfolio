@@ -14,7 +14,7 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.",
-      image: "/images/myntra.png",
+      image: "/images/nova1.png",
       tags: ["React", "Redux", "Node.js", "MongoDB", "Git"],
       liveLink: "https://e-commerce-myntra-omega.vercel.app/",
       githubLink: "https://github.com/bishowlamichhane/eCommerce--Myntra",
