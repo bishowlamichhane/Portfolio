@@ -21,6 +21,15 @@ const Projects = () => {
     },
 
     {
+      title: "Admin Dashboard",
+      description:
+        "An admin dashboard for online business, that manages sales, order management and customer management. This is a full Stack Web App created using React.js, Redux Toolkit and Firebase for backend. ",
+      image: "/images/openshop.png",
+      tags: ["React", "Recharts", "Redux", "Chart.js"],
+      liveLink: "https://admin-dashboard-phi-amber.vercel.app/",
+      githubLink: "https://github.com/bishowlamichhane/Admin-Dashboard",
+    },
+    {
       title: "Task Management App",
       description:
         "A productivity app that helps users organize tasks, set priorities, and track progress.",
@@ -29,15 +38,6 @@ const Projects = () => {
       liveLink: "https://gist-task-management-web.vercel.app/",
       githubLink:
         "https://github.com/bishowlamichhane/GIST-Task-Management-Web",
-    },
-    {
-      title: "Admin Dashboard",
-      description:
-        "An admin dashboard for online business, that manages sales, order management and customer management. This is a full Stack Web App created using React.js, Redux Toolkit and Firebase for backend. ",
-      image: "/images/openshop.png",
-      tags: ["React", "Recharts", "Redux", "Chart.js"],
-      liveLink: "https://admin-dashboard-phi-amber.vercel.app/",
-      githubLink: "https://github.com/bishowlamichhane/Admin-Dashboard",
     },
     {
       title: "Video Streaming Platform",
