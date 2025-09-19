@@ -11,7 +11,7 @@ const Hero = () => {
               Hi, I'm <span className="text-primary">Bishow</span>
               <br />
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                Frontend Developer
+                Fullstack Developer
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground">
